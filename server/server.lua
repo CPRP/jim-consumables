@@ -1,9 +1,23 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
+-- for k, v in pairs(Config.Consumables) do
+-- 	QBCore.Functions.CreateUseableItem(k, function(source, item) TriggerClientEvent('jim-consumables:Consume', source, item.name) end)
+-- 	if not QBCore.Shared.Items[k] then print("Item check - '"..k.."' not found in the shared lua") end
+-- 	if not Config.Emotes[v.emote] then print("Emote check - '"..k.."' requested emote '"..v.emote.."' - not found in config.lua") end
+-- end
+
 for k, v in pairs(Config.Consumables) do
-	QBCore.Functions.CreateUseableItem(k, function(source, item) TriggerClientEvent('jim-consumables:Consume', source, item.name) end)
-	if not QBCore.Shared.Items[k] then print("Item check - '"..k.."' not found in the shared lua") end
-	if not Config.Emotes[v.emote] then print("Emote check - '"..k.."' requested emote '"..v.emote.."' - not found in config.lua") end
+    QBCore.Functions.CreateUseableItem(k, function(source, item) 
+		if not v.requiredItem then
+            TriggerClientEvent('jim-consumables:Consume', source, item.name) -- Trigger event to consume the item
+        elseif QBCore.Functions.HasItem(source, v.requiredItem) then -- Check if player has the required item in their inventory
+            TriggerClientEvent('jim-consumables:Consume', source, item.name) -- Trigger event to consume the item
+        else
+            TriggerClientEvent('QBCore:Notify', source, "You need a " .. v.requiredItem .. " to use this item.", "error") -- Send a notification to the player if they don't have the required item
+        end
+    end)
+    if not QBCore.Shared.Items[k] then print("Item check - '"..k.."' not found in the shared lua") end
+    if not Config.Emotes[v.emote] then print("Emote check - '"..k.."' requested emote '"..v.emote.."' - not found in config.lua") end
 end
 
 RegisterNetEvent('jim-consumables:server:toggleItem', function(give, item, amount)
