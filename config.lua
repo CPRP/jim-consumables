@@ -184,6 +184,20 @@ Config = {
 		-- MOONSHINE
 		["m-moonshine"] = {	emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
 		
+		-- RCORE-CASINO
+			-- Casino Bar Drinks
+		["casino_beer"] = { 		emote = "beer", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["casino_coke"] = {			emote = "ecola",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+		["casino_sprite"] = {		emote = "sprunk",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { thirst = math.random(55,65), }},
+		["casino_luckypotion"] = {	emote = "whiskey",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["casino_coffee"] = { 		emote = "coffee", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "drink", stats = { effect = "stamina", time = 10000, thirst = math.random(35,54), }},
+			-- Casino Bar Snacks
+		["casino_burger"] = {			emote = "burger",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+		["casino_psqs"] = { 		emote = "egobar", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(35,54), }},
+		["casino_ego_chaser"] = { 	emote = "egobar", 		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(35,54), }},
+		["casino_sandwitch"] = { 	emote = "sandwich", 	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(35,54), }},
+		["casino_donut"] = {		emote = "donut",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
+
 		------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 		-- Items that effect status changes, like bleeding can cause problems as they are all handled in their own scripts
 		-- Testing these but they may be best left handled by default scripts
