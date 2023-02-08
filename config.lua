@@ -285,15 +285,15 @@ Config = {
 		["weddingcake_joint"] = { 	emote = "joint",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
 		["whitewidow_joint"] = { 	emote = "joint",	time = math.random(5000, 6000), stress = math.random(1, 10), stamina = 10, heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
 			--Edibles
-		["gummy_rasberry"] = {		emote = "oxy",	time = math.random(5000, 6000), stress = math.random(1, 24), heal = 20, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
-		["gummy_blueberry"] = {		emote = "oxy",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
-		["gummy_grape"] = {			emote = "oxy",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
-		["gummy_applering"] = {		emote = "oxy",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = math.random(1, 10), armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
-		["edible_ricecrispy"] = {	emote = "oxy",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
-		["gummy_belt"] = {			emote = "oxy",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
-		["edible_snickerdoodle"] = {	emote = "oxy",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
-		["edible_peanutcookie"] = {	emote = "oxy",	time = math.random(5000, 6000), stress = math.random(1, 10), stamina = 10, heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
-		["edible_cchip"] = {		emote = "oxy",	time = math.random(5000, 6000), stress = math.random(1, 10), stamina = 10, heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+		["gummy_rasberry"] = {		emote = "edibles",	time = math.random(5000, 6000), stress = math.random(1, 24), heal = 20, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+		["gummy_blueberry"] = {		emote = "edibles",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+		["gummy_grape"] = {			emote = "edibles",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+		["gummy_applering"] = {		emote = "edibles",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = math.random(1, 10), armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+		["edible_ricecrispy"] = {	emote = "edibles",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+		["gummy_belt"] = {			emote = "edibles",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+		["edible_snickerdoodle"] = {	emote = "edibles",	time = math.random(5000, 6000), stress = math.random(1, 10), heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+		["edible_peanutcookie"] = {	emote = "edibles",	time = math.random(5000, 6000), stress = math.random(1, 10), stamina = 10, heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
+		["edible_cchip"] = {		emote = "edibles",	time = math.random(5000, 6000), stress = math.random(1, 10), stamina = 10, heal = 0, armor = 10, type = "drug", stats = { screen = "weed", effect = "armor", widepupils = false, canOD = false } },
 		
 		----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -567,5 +567,6 @@ Config = {
 			{ EmoteLoop = true, EmoteMoving = true, }},
 		["edibles"] = { "mp_suicide", "pill", "Edibles", AnimationOptions =
 			{ EmoteLoop = true, EmoteMoving = true, }},
+			
 	},
 }
