@@ -319,7 +319,7 @@ Config = {
 		["cokebaggy"] = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true } },
 		["coke_1oz"] = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true } },
 		["crack_baggy"] = { 	emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true }, requiredItem = "lighter" },
-		["crack_1oz"] = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true }, requiredItem = "lighter" },
+		-- ["crack_1oz"] = { 		emote = "meth",		time = math.random(3000, 4000), stress = math.random(12, 24), heal = 0, armor = 0, type = "drug", stats = { screen = "turbo", effect = "stamina", widepupils = false, canOD = true }, requiredItem = "lighter" },
 		
 		--[[jixel-whitewidow]]
 			--Joints
