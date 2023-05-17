@@ -287,6 +287,16 @@ Config = {
 		["casino_sandwitch"] = { 	emote = "sandwich", 	canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(35,54), }},
 		["casino_donut"] = {		emote = "donut",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0, type = "food", stats = { hunger = math.random(55,65), }},
 
+		--Jim-Bars
+		["cranberry"] = {	emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["schnapps"] = {	emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["gin"] = {			emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["scotch"] = {		emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["rum"] = {			emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["icream"] = {		emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["amaretto"] = {	emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		["curaco"] = {		emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
+		
 		------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 		-- Items that effect status changes, like bleeding can cause problems as they are all handled in their own scripts
 		-- Testing these but they may be best left handled by default scripts
@@ -538,14 +548,5 @@ Config = {
 		["crack"] = { "switch@trevor@trev_smoking_meth", "trev_smoking_meth", "Crack", AnimationOptions = { EmoteLoop = true, EmoteMoving = true, }},
 		["meth"] = { "switch@trevor@trev_smoking_meth", "trev_smoking_meth_loop", "Meth", AnimationOptions = { EmoteLoop = true, EmoteMoving = true, }},
 		["edibles"] = { "mp_suicide", "pill", "Edibles", AnimationOptions = { EmoteLoop = true, EmoteMoving = true, }},		
-		--Jim-Bars
-		["cranberry"] = {	emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
-		["schnapps"] = {	emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
-		["gin"] = {			emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
-		["scotch"] = {		emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
-		["rum"] = {			emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
-		["icream"] = {		emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
-		["amaretto"] = {	emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
-		["curaco"] = {		emote = "rumb",		canRun = true, 	time = math.random(3000, 4000), stress = math.random(2, 4), heal = 0, armor = 0,  type = "alcohol", stats = { thirst = math.random(35,54), canOD = true }},
 	},
 }
